@@ -14,42 +14,41 @@
     <!-- Formulário de Registro -->
     <div class="container">
       <div class="register-animal-container">
-        <form>
+        <form action="{{route('adocao')}}" method="POST">
+        @csrf
           <div class="mb-3">
             <label for="animal-name" class="form-label">Nome do Animal</label>
-            <input type="text" class="form-control" id="animal-name" placeholder="Digite o nome do animal" required>
+            <input type="text" class="form-control" id="animal-name" name="nome" placeholder="Digite o nome do animal" required>
           </div>
           <div class="mb-3">
-            <label for="animal-species" class="form-label">Espécie</label>
-            <select class="form-control" id="animal-species" required>
-              <option value="">Selecione a espécie</option>
-              <option value="cachorro">Cachorro</option>
-              <option value="gato">Gato</option>
-              <option value="coelho">Coelho</option>
-              <option value="outro">Outro</option>
-            </select>
+            <label for="animal-name" class="form-label">Cor do Animal</label>
+            <input type="text" class="form-control" id="animal-color" name="cor" placeholder="Digite a cor do animal" required>
+          </div>
+          <div class="mb-3">
+            <label for="animal-age" class="form-label">Peso</label>
+            <input type="number" class="form-control" id="animal-height" name="peso" placeholder="Digite o peso do animal" required>
           </div>
           <div class="mb-3">
             <label for="animal-age" class="form-label">Idade</label>
-            <input type="number" class="form-control" id="animal-age" placeholder="Digite a idade do animal" required>
+            <input type="number" class="form-control" id="animal-age" name="idade" placeholder="Digite a idade do animal" required>
           </div>
           <div class="mb-3">
-            <label for="animal-size" class="form-label">Porte</label>
-            <select class="form-control" id="animal-size" required>
-              <option value="">Selecione o porte</option>
-              <option value="pequeno">Pequeno</option>
-              <option value="medio">Médio</option>
-              <option value="grande">Grande</option>
-            </select>
+            <label for="animal-age" class="form-label">Especie</label>
+            <input type="text" class="form-control" id="animal-specie" name="especie" placeholder="Digite a especie do animal" required>
           </div>
           <div class="mb-3">
+            <label for="animal-age" class="form-label">Raça</label>
+            <input type="text" class="form-control" id="animal-race" name="raca" placeholder="Digite a raça do animal" required>
+          </div>
+
+          <!-- <div class="mb-3">
             <label for="animal-description" class="form-label">Descrição</label>
             <textarea class="form-control" id="animal-description" rows="4" placeholder="Descreva o animal (temperamento, saúde, etc.)" required></textarea>
           </div>
           <div class="mb-3">
             <label for="animal-photo" class="form-label">Foto do Animal</label>
             <input type="file" class="form-control" id="animal-photo" accept="image/*" required>
-          </div>
+          </div> -->
           <button type="submit" class="btn btn-register-animal">Registrar Animal</button>
         </form>
       </div>

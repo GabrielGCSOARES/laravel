@@ -14,7 +14,13 @@
               <a class="nav-link" href="#">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Animais para Adoção</a>
+              <a class="nav-link" href="/listar-animais">Animais para Adoção</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/registro">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contato</a>
